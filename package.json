@@ -1,0 +1,32 @@
+{
+  "version": "0.0.1",
+  "name": "cordova-tgvoip-plugin",
+  "cordova_name": "TGVoip Plugin",
+  "description": "",
+  "author": "TMQ Dev Team",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/malufett/cordova-plugin-tgvoip.git"
+  },
+  "issue": "https://github.com/malufett/cordova-plugin-tgvoip/issues",
+  "cordova": {
+    "id": "cordova-tgvoip-plugin",
+    "platforms": [
+      "android",
+      "ios"
+    ]
+  },
+  "keywords": [
+    "ecosystem:cordova",
+    "cordova",
+    "android",
+    "ios",
+    "telegram",
+    "tgvoip",
+    "voip"
+  ],
+  "dependencies": {
+    "cordova-common": "^4.0.2"
+  }
+}

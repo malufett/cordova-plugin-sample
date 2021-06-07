@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<plugin xmlns="http://apache.org/cordova/ns/plugins/1.0"
+        xmlns:android="http://schemas.android.com/apk/res/android"
+        id="cordova-tgvoip-plugin" version="0.0.1">
+    <name>TGVoipPlugin</name>
+
+    <description>An Android Cordova plugin that allows users to access Telegram tgvoip library.</description>
+    <license>MIT</license>
+
+    <keywords>cordova,android,tgvoip,voip,telegram</keywords>
+    <repo>https://github.com/malufett/cordova-plugin-tgvoip.git</repo>
+    <issue>https://github.com/malufett/cordova-plugin-tgvoip/issues</issue>
+  
+    <engines>
+        <engine name="cordova" version=">=3.0.0"/>
+    </engines>
+  
+    <js-module src="www/plugin.js" name="TGVoipPlugin">
+        <clobbers target="window.plugins.tgvoip" />
+    </js-module>
+    <platform name="android">
+        <config-file target="res/xml/config.xml" parent="/*">
+            <feature name="TGVoipPlugin">
+                <param name="android-package" value="org.parler.TGVoipPlugin"/>
+            </feature>
+        </config-file>
+
+        <source-file src="src/android/TGVoipPlugin.java" target-dir="app/src/main/java/org/parler/"/>
+    </platform>
+</plugin>
